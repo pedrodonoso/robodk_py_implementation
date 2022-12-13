@@ -24,7 +24,7 @@ WAIT_CONNECTION = int(os.environ['WAIT_CONNECTION'])
 try:
     # RDK = Robolink(args=['/NOSPLASH','/NOSHOW']) 
     RDK = Robolink() 
-    # RDK.setRunMode(RUNMODE_RUN_ROBOT)
+    # RDK.setRunMode(RUNMODE_RUN_ROBOT) # descomentar para probar en robot
     RDK.setRunMode(RUNMODE_SIMULATE )
 
     # crea link RDK

@@ -10,24 +10,34 @@
 
 # Configurate virtualenv
 
+- Crear directorio virtualenv: 
+    ```bash
+        $ virtualenv -p /path/python venv
+    ```
+
+- Activar directorio virtual:
+    ```bash
+        $ source venv/bin/activate
+    ```
+
+- Desactivar directorio virtual:
+
+    ```bash
+        $ (venv) deactivate
+    ``` 
+# Install requirements
+
+Para instalar las librerías necesarias utilizar:
+
 ```bash
-    $ virtualenv -p /path/python venv
-    $ source venv/bin/activate
-    $ deactivate
+    $ (venv) pip install -r requirements.txt
 ```
-# Install robodk
+
+ó
 
 ```bash
-    $ pip install robodk
-    $ pip install Flask
-```
-
-# Run API
-
-```bash
-    $ cd api
-    $ flask --app main run
-    $ flask --app main --debug run
+    $ (venv) pip install robodk
+    $ (venv) pip install python-dotenv
 ```
 
 # LINUX
@@ -53,4 +63,4 @@
 
 - [RodoDK API Python](https://robodk.com/doc/en/PythonAPI/index.html)
 - [RoboDK](https://robodk.com/doc/es/Basic-Guide.html)
-- [pdonoso - Repositorio Funcional](https://github.com/pedrodonoso/robodk_arqui_project)
+- [Repositorio Funcional - pdonoso ](https://github.com/pedrodonoso/robodk_arqui_project)

@@ -41,8 +41,8 @@ class Link:
         
         # ejecuta la señal que inicia el handler de interrupción
         signal.signal(signal.SIGINT, self.handler) 
-        return True
-    
+        return None
+
     def set_path_station(self, path_station: str):
         self.path_station = path_station
     def set_robot_name(self, robot_name: str):

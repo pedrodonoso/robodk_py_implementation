@@ -9,6 +9,7 @@ class Moves:
     
     def __init__(self, robot: Item):
         self.robot = robot
+        return None
 
     def movement_test(self):
         """
