@@ -102,7 +102,7 @@ class Link:
             - Tiempo de espera entre cada intento en segundos(w_c).
         """
         robot_connection = self.robot.ConnectSafe(robot_ip=self.robot_ip, max_attempts=self.m_a, wait_connection=self.w_c)
-        if (robot_connection): 
+        if self.robot.Valid(): 
             print("INF: Conectado")
         else: 
             print("INF: NO Conectado")
